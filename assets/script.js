@@ -10,7 +10,7 @@ function update() {
       const realday = days[today.getDay()];
       day.innerHTML = realday;
       const time = getFormattedTime()
-      document.querySelector(".time").innerHTML = time
+      // document.querySelector(".time").innerHTML = time
 }
 
 setInterval(() => {
