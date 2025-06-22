@@ -1,0 +1,13 @@
+{
+  "name": "Rain Live Wallpaper Tab",
+  "description": "Replace new tab with a gorgeous shader-based rain animation.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "icons": {
+    "128": "rain/thumbnail.jpg"
+  },
+  "permissions": []
+}

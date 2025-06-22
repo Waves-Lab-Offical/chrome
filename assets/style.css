@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  pointer-events: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: 'anurati';
+  src: url('../anurati.otf');
+}
+
+.day {
+  font-family: 'anurati', sans-serif;
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 5px;
+}
+
+.search {
+  padding: 5px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  border-radius: 8px;
+  pointer-events: all;
+  background: #00000028;
+  backdrop-filter: blur(10px);
+  color: rgb(255, 255, 255);
+  width: 30vw;
+}
+
+.search:focus {
+  outline: none;
+  transform: translateY(2px);
+}
+
+.widget {
+  width: 30vw;
+  min-height: 180px;
+  background: #0000001e;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding: 20px;
+}
+
+.v {
+  min-height: 140px;
+  width: 50%;
+}
+
+.v1 {
+   border-right: 1px solid rgba(255, 255, 255, 0.103);
+   padding-right: 8px;
+}
+
+.v2 {
+   border-left: 1px solid rgba(255, 255, 255, 0.103);
+   padding-left: 8px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.clock {
+  background: rgba(0, 0, 0, 0.123);
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.158);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 100 !important;
+}
+
+p {
+  font-size: 11px;
+}
