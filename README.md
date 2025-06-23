@@ -7,7 +7,7 @@ this project uses The Lively Wallpapers Rain Wallpaper so make sure to check the
 * This Project uses Three.js for Rain Drops
 * Feel Free to modify
 
-![A img](./rain/thumbnail.jpg "This is Thumbnail")
+![A img](./rain/demo.png "This is Thumbnail")
 
 ## How to Mount Extension
 
