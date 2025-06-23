@@ -7,7 +7,7 @@
     "newtab": "newtab.html"
   },
   "icons": {
-    "128": "rain/favicon.ico"
+    "128": "rain/thumbnail.jpg"
   },
   "permissions": []
 }
