@@ -3,26 +3,25 @@
   because some dude out there is gonna run a 48-hour timelapse with rain shaders and lo-fi beats.
  */
 
-function update() {
+async function update() {
+  return new Promise((reject, resolve) => {
+    setTimeout(() => {
       const day = document.querySelector("#day");
       const days = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
       const today = new Date();
       const realday = days[today.getDay()];
       day.innerHTML = realday;
-      const time = getFormattedTime()
-      // document.querySelector(".time").innerHTML = time
+      resolve(0)
+    }, 2000)
+  })
 }
 
-setInterval(() => {
-  update()
+setInterval(async () => {
+  await update()
 }, 1000 * 60 * 60 * 24)
 
-setInterval(() => {
-  update()
-}, 1000 * 59)
-
-function init() {
-  update()
+async function init() {
+  await update()
 }
 
 document.querySelector(".search").addEventListener('keydown', (e) => {
@@ -64,6 +63,6 @@ function getFormattedTime() {
   return `${hours}:${paddedMinutes} ${ampm}`;
 }
 
-document.addEventListener('DOMContentLoaded', (e) => {
-  init()
+document.addEventListener('DOMContentLoaded', async (e) => {
+  await init()
 })
